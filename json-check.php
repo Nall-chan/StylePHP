@@ -39,7 +39,7 @@
 
     function jsonStyleCheck(string $dir, string $mode)
     {
-        $ignore = ['./.vscode', './.idea', './.git','./libs/vendor'];
+        $ignore = ['./.vscode', './.idea', './.git','./libs','./tests'];
         $invalidFiles = [];
         $files = scandir($dir);
         foreach ($files as $file) {
